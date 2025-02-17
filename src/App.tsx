@@ -1,12 +1,12 @@
-import { useState } from "react";
 import AWSMNavbar from "./components/AWSMNavbar";
-
+import ReactDocs from "./components/ReactDocs";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <AWSMNavbar></AWSMNavbar>
+      <div>
+        <AWSMNavbar></AWSMNavbar>
+        <ReactDocs></ReactDocs>
+      </div>
     </>
   );
 }
