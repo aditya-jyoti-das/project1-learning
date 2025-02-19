@@ -41,7 +41,6 @@ const ClaudeOutput = ({ list }: Props) => {
     const fetchRecipe = async () => {
       const recipe: string | undefined = await getRecipiFromHFMistral(list);
       setRecipeMarkdown(recipe);
-      console.log(recipe);
     };
 
     fetchRecipe();
