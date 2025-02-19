@@ -1,0 +1,138 @@
+
+.navbar-custom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 80px;
+    font-size:30px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    box-shadow: 2px 2px gray;
+
+}       .cluade-kitchen-img{
+            height: 40px;
+            width: 40px;
+            padding-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+.claude-container-chef{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(232, 219, 235);
+    height: 1000px;
+    }  .sub-container-claude-chef{
+        background-color: whitesmoke;
+        width: 90%;
+        border-radius: 10px 10px ;
+        box-shadow: 3px 3px gray ;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }   .input-group-claude-chef{
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            width: 90%;
+            justify-content: center;
+
+
+        }   .input-claude-chef-ingredient {
+            width: 50%;
+            height: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: 500;
+            font-style: italic;
+            border-radius: 5px;
+
+
+
+        }  .btn-claude-chef-ingredient{
+            border-radius: 5px;
+            height: 30px;
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+
+.sub-container-2-claude-chef{
+    /* border: 1px solid darkblue; */
+    /* height: 400px; */
+    margin-top: 30px;
+    width: 50%;
+
+}
+
+
+.heading-ingredient-at-hand{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-style: italic;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    padding-left: 10px;
+
+
+}
+
+.sub-3-generate-recipe{
+    width: 80%;
+    height: 90px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(211, 177, 184);
+    border-radius: 10px;
+}
+.sub-3-generate-recipe p, h5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.gen-rec{
+    padding: 0px;
+    margin-left: 5px;
+    height: 27px;
+    border-radius: 5px;
+    background-color: rgb(199, 56, 187);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 1px 1px gray;
+
+}
+
+.claude-output{
+    width: 80%;
+    height: 90px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(211, 177, 184);
+    border-radius: 10px;
+}
