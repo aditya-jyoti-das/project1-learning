@@ -1,5 +1,5 @@
 import { HfInference } from "@huggingface/inference";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Markdown from "react-markdown";
 
 interface Props {
@@ -34,6 +34,7 @@ export const getRecipiFromHFMistral = async (list: string[]) => {
 };
 
 const ClaudeOutput = ({ list }: Props) => {
+  const getRecipeDiv = useRef<HTMLDivElement>(null);
   const [recipeMarkdown, setRecipeMarkdown] = useState<string | undefined>(
     "Loading..."
   );
@@ -46,7 +47,18 @@ const ClaudeOutput = ({ list }: Props) => {
     fetchRecipe();
   }, [list]);
 
-  return <Markdown className="claude-output">{recipeMarkdown}</Markdown>;
+  useEffect(() => {
+    if (recipeMarkdown !== "Loading..." && getRecipeDiv.current !== null) {
+      getRecipeDiv.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [recipeMarkdown]);
+
+  return (
+    <div ref={getRecipeDiv}>
+      {" "}
+      <Markdown className="claude-output">{recipeMarkdown}</Markdown>
+    </div>
+  );
 };
 
 export default ClaudeOutput;
