@@ -4,11 +4,7 @@ import IngredientOnHand from "./IngredientOnHand";
 import GenerateRecipe from "./GenerateRecipe";
 const AddIngredient = () => {
   // State to store the list of ingredients
-  const [list, setList] = useState<string[]>([
-    "oregano",
-    "cucumber",
-    "softIce",
-  ]);
+  const [list, setList] = useState<string[]>([]);
 
   const [inputValue, setInputValue] = useState("");
 
