@@ -6,7 +6,7 @@ const Header = () => {
         src="src/assets/chef-claude-icon.png"
         alt="CLAUDE KITCHEN"
       />
-      <span className="">Claude Chef</span>
+      <span className="">chef.Ai</span>
     </nav>
   );
 };

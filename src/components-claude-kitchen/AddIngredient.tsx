@@ -14,6 +14,9 @@ const AddIngredient = () => {
       setInputValue(""); // Clear input field after adding
     }
   };
+  const clearList = () => {
+    setList([]);
+  };
 
   return (
     <div className="claude-container-chef">
@@ -35,6 +38,15 @@ const AddIngredient = () => {
           >
             + Add Ingredient
           </button>
+          {list.length > 0 && (
+            <button
+              className="btn-claude-chef-ingredient"
+              type="button"
+              onClick={clearList}
+            >
+              clearList
+            </button>
+          )}
         </div>
         <IngredientOnHand list={list}></IngredientOnHand>
         <GenerateRecipe list={list}></GenerateRecipe>
